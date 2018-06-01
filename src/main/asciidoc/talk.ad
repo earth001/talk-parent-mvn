@@ -1,31 +1,174 @@
-= Template slide
+= Introducción a Java™
 :icons: font
 :twitter-tag: @juan_shoko
-:conference-tag: #accsa
+:conference-tag: #training-accsa
 :talk-tag: #intro-java
 :slide-link: http://bit.ly/jsch-comm
 :linkattrs:
 
-include::footer.ad[]
-
-== section title
+== Contenido
 * ¿Qué es?
 * Características
-* Plataformas
+* Plataforma
 * Ecosistema
 * Estado actual
-* ¿Quién lo usa?
 * Mitos
 * Conclusiones
 
 == ¿Qué es?
+* Lenguaje de programación
+** De propósito general
+** Concurrente
+** Fuertemente tipado
+** Orientado a objetos
+** Compilado a bytecode
+** Ejecutado sobre la Java Virtual Machine
 
-== Características
+== JVM
+image::jvm.jpg[background, size=contain]
+//The JVM is a program whose purpose is to execute other programs
+== "Write once, run anywhere"
+image::jvm_overview.jpg[background, size=contain]
+//The JVM has two primary functions: to allow Java programs to run on any device or operating system, and to manage and optimize program memory
+== Garbage Collector
+image::toptal-gc.jpg[background, size=contain]
+//https://www.toptal.com/software/eliminating-garbage-collector
+== Garbage Collector
+El garbage collector (GC) se encarga de administrar  automáticamente las solicitudes de asignación de memoria dinámica de una aplicación.
+// Ejemplo
+
+== ¿Cómo lo hace?
+
+* Asigna y devuelve memoria al sistema operativo.
+* Distribuye esa memoria a la aplicación tal como la solicita.
+* Determina qué partes de esa memoria aún están siendo utilizadas por la aplicación.
+* Reclama la memoria no utilizada para su reutilización por la aplicación.
+
 == Plataformas
+
+== Java SE
+== !
+image::java_se.png[background, size=auto]
+//http://www.oracle.com/technetwork/topics/newtojava/documentation/index-jsp-139969.html
+
+== !
+image::java_se_implementations.png[background, size=contain]
+
+== Java EE
+
+== !
+image::java_ee.png[background, size=contain]
+//https://blogs.oracle.com/java/java-ee-8-overview
+
+== !
+image::java-ee-compatible-implementations.png[background, size=contain]
+//http://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html
+//https://blogs.oracle.com/java/java-ee-8-overview
+
+== Jakarta EE
+image::jakarta_ee.png[background, size=auto]
+//https://twitter.com/javaee_guardian/status/993671942610800641
+
+== !
+image::jakarta-ee-members.png[background, size=contain]
+
+== Java Embedded & Java ME
+
+== !
+image::java-me-embedded.jpg[background, size=contain]
+//https://www.oracle.com/java/java-me-embedded.html
+
+== !
+image::java_me_features.jpg[background, size=contain]
+//https://www.slideshare.net/terrencebarr/javaone-2015-con-3437-smart-devices-for-the-internet-of-things
+
 == Ecosistema
+
+== !
+//Librerias
+image::maven_central.png[background, size=contain]
+
+== !
+//Lenguajes
+image::jvm-languages.png[background, size=contain]
+//http://go.typesafe.com/convince-your-boss
+
+== !
+//Frameworks
+//https://zeroturnaround.com/webframeworksindex/
+image::java_web_frameworks.png[background, size=contain]
+
+== !
+image::java-ides.jpg[background, size=contain]
+//IDES
+//http://www.mindfiresolutions.com/blog/2018/05/best-java-ides-2018/
+
 == Estado actual
-== ¿Quién lo usa?
+//http://www.baeldung.com/java-in-2018
+== !
+image::java_adoption.png[background, size=auto]
+
+== !
+image::spring_adoption.png[background, size=auto]
+
+== !
+image::ide_adoption.png[background, size=auto]
+
+== !
+image::server_adoption.png[background, size=auto]
+
+== !
+image::jvm_languages_adoption.png[background, size=auto]
+
+== !
+//Index
+//https://www.tiobe.com/tiobe-index/
+image::tiobe_index.png[background, size=contain]
+
+== !
+image::pypl_index.png[background, size=contain]
+//http://pypl.github.io/PYPL.html
+
+== !
+//https://stackify.com/popular-programming-languages-2018/
+image::indeed-programming-languages.webp[background, size=contain]
+
+== !
+//https://stackify.com/popular-programming-languages-2018/
+image::github-programming-languages.webp[background, size=contain]
+
 == Mitos
+
+== !
+image::diferencia-java-javascript.jpg[background, size=contain]
+//https://www.vichaunter.org/tecnologia/diferencia-java-javascript
+
+== !
+image::rabbit-runs-fast-and-turtle-runs-slow.jpg[background, size=contain]
+//https://www.vichaunter.org/tecnologia/diferencia-java-javascript
+
+//https://www.nirico.com/oracle-is-improving-java-security-what-does-this-mean-for-you/
+
+== !
+image::java_insecure.png[background, size=contain]
+
 == Conclusiones
+
+== !
+* Java no es solo un lenguaje de programación, es un plataforma.
+* Cuenta con una comunidad global.
+* Tiene la experiencia de más 20 años en la industria.
+* Es una herramienta que permite resolver muchos casos de uso, pero no todos.
+* Tiene el soporte y la confianza de marcas reconocidas.
+
+== Recursos
+* Oracle - https://docs.oracle.com/en/java/
+//https://docs.oracle.com/javase/10/gctuning/introduction-garbage-collection-tuning.htm
+* JavaWorld - https://www.javaworld.com/
+//https://www.javaworld.com/article/3272244/core-java/what-is-the-jvm-introducing-the-java-virtual-machine.html
+* ZeroTurnaround -  https://zeroturnaround.com/
+* Baeldung - http://www.baeldung.com/
+* Stackify - https://stackify.com/
+* Jakarta EE - https://jakarta.ee/
 
 include::self.ad[]

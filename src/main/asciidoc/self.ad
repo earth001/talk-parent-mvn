@@ -1,7 +1,5 @@
 == Juan Moreno
 
--
-
 ++++
 <span>
 <img src="images/accsa-logo.jpg" style="vertical-align: middle; border:none;" width="200"/>
@@ -15,4 +13,4 @@
 </span>
 ++++
 
-link:{slide-link}[Presentación online: {slide-link}]
+//link:{slide-link}[Presentación online: {slide-link}]

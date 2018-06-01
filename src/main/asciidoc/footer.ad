@@ -10,7 +10,6 @@
     } );
 </script>
 <div id="schauderhaft-footer" class="footer">
-    <span class="element">{twitter-tag}</span>
     <span class="element">{conference-tag}</span>
     <span class="element">{talk-tag}</span>
 </div>
