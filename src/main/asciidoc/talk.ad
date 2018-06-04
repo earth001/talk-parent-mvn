@@ -1,31 +1,34 @@
-= Template slide
+= Fundamentos de testing en Aplicaciones Android
 :icons: font
-:twitter-tag: @juan_shoko
-:conference-tag: #accsa
-:talk-tag: #intro-java
+:twitter-tag: UDE
+:conference-tag:
+:talk-tag: TI/ATI
 :slide-link: http://bit.ly/jsch-comm
 :linkattrs:
 
 include::footer.ad[]
 
-== section title
-* ¿Qué es?
-* Características
-* Plataformas
-* Ecosistema
-* Estado actual
-* ¿Quién lo usa?
-* Mitos
+[NOTE.speaker]
+====
+Documentación oficial en:
+https://developer.android.com/training/testing/fundamentals
+====
+
+== Contenido
+* Fundamentos de Testing
+* Piramide de testing
+* Tipos de test
+* Junit
+* Expresso
+* TDD
 * Conclusiones
 
-== ¿Qué es?
-
-== Características
-== Plataformas
-== Ecosistema
-== Estado actual
-== ¿Quién lo usa?
-== Mitos
+== Fundamentos de Testing
+== Piramide de testing
+== Tipos de test
+== Junit
+== Expresso
+== TDD
 == Conclusiones
 
 include::self.ad[]

@@ -51,21 +51,21 @@
   url('fonts/roboto-mono-v4-latin_latin-ext-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-// brown palette
+// black palette
 // Palette URL: http://paletton.com/#uid=10r1c0k4k6y3rmL3+fcd24Nlz4Y */
-$color-primary-0: #34302D; // Main Primary color */
-$color-primary-1: #B5AAA2;
-$color-primary-2: #79706A;
-$color-primary-3: #261D17;
-$color-primary-4: #28180D;
+$color-primary-0: #000000; // Main Primary color */
+$color-primary-1: #949292;
+$color-primary-2: #515151;
+$color-primary-3: #010000;
+$color-primary-4: #070303;
 
-// green palette
-// Palette URL: http://paletton.com/#uid=12D1c0kkKp-7yIPeOv0pvlbvxfx */
-$color-secondary-0: #6DB33F; // Main Primary color */
-$color-secondary-1: #CCEDB6;
-$color-secondary-2: #9CD975;
-$color-secondary-3: #4D941E;
-$color-secondary-4: #2C6D02;
+// blue palette
+// Palette URL: http://paletton.com/#uid=13t1c0kpOS3bqXfjpUeyBP0Kou+ */
+$color-secondary-0: #36A8E5; // Main Primary color */
+$color-secondary-1: #A2D7F4;
+$color-secondary-2: #64BCEB;
+$color-secondary-3: #0B93DC;
+$color-secondary-4: #04689D;
 
 $backgroundColor: $color-primary-1;
 
@@ -140,8 +140,8 @@ $selectionColor: $color-primary-0;
 }
 
 body {
-  // pattern from https://subtlepatterns.com/skin-side-up/
-  background-image: url('images/what-the-hex.png');
+  // pattern from https://www.toptal.com/designers/subtlepatterns/subtle-grey/
+  background-image: url('images/grey_@2X.png');
 }
 
 // shadow for background images
