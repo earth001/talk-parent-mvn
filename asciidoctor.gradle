@@ -1,0 +1,43 @@
+asciidoctor {
+    dependsOn download, copyTheme
+    sourceDir = file("src/main/asciidoc")
+    sources {
+        include 'talk.ad', 'footer.ad', 'self.ad'
+    }
+
+    resources {
+        from(sourceDir) {
+            include 'images/**'
+        }
+        from(downloadDir) {
+            include 'reveal.js/**'
+        }
+    }
+
+    backends = ['revealjs']
+
+    attributes = [
+            'endpoint-url'        : 'http://example.org',
+            'source-highlighter'  : 'highlightjs',
+            'imagesdir'           : './images',
+            'toc'                 : 'left',
+            'icons'               : 'font',
+            'setanchors'          : 'true',
+            'idprefix'            : '',
+            'idseparator'         : '-',
+            'basedir'             : projectDir,
+            'docinfo1'            : 'true',
+            'width'               : 1280,
+            'height'              : 720,
+            'project-version'     : '1.0',
+            'revealjs_transition' : 'linear',
+            'revealjs_history'    : 'true',
+            'revealjs_slideNumber': 'true',
+            'revealjs_theme'      : 'gradle',
+            'examples'            : file("${projectDir}/examples")
+    ]
+
+    options template_dirs: [new File(templateDir, "asciidoctor-reveal.js-${asciidoctorBackendVersion}/templates/slim").absolutePath]
+}
+
+assemble.dependsOn asciidoctor
