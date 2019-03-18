@@ -29,11 +29,12 @@ asciidoctor {
             'docinfo1'            : 'true',
             'width'               : 1280,
             'height'              : 720,
+            'margin'              : 0,
             'project-version'     : '1.0',
             'revealjs_transition' : 'linear',
             'revealjs_history'    : 'true',
             'revealjs_slideNumber': 'true',
-            'revealjs_theme'      : 'gradle',
+            'revealjs_theme'      : 'theme/schauderhaft.css',
             'examples'            : file("${projectDir}/examples")
     ]
 
