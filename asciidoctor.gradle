@@ -34,7 +34,7 @@ asciidoctor {
             'revealjs_transition' : 'linear',
             'revealjs_history'    : 'true',
             'revealjs_slideNumber': 'true',
-            'revealjs_theme'      : 'theme/schauderhaft.css',
+            'revealjs_theme'      : 'schauderhaft',
             'examples'            : file("${projectDir}/examples")
     ]
 

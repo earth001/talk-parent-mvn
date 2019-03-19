@@ -17,6 +17,7 @@ buildscript {
 
 plugins {
     id "com.gradle.build-scan" version "2.1"
+    id "com.github.salomonbrys.gradle.sass" version "1.2.0"
 }
 
 repositories {
@@ -73,8 +74,10 @@ task download {
 
 task copyTheme(type: Copy) {
     dependsOn download
+    dependsOn sassCompile
     from fileTree("$revealJsDir/reveal.js-${revealjsVersion}")
-    from(fileTree('src/docs/theme')) {
+    //from(fileTree('src/docs/theme')) {
+    from(fileTree('$buildDir/sass')) {
         into 'css/theme'
     }
     into revealJsDir
@@ -98,3 +101,9 @@ apply from: 'asciidoctor.gradle'
 allprojects {
     apply plugin: 'idea'
 }
+
+sassCompile {
+    source = fileTree("src/main/sass/schauderhaft.scss")
+//    outputDir = file("$buildDir/asciidoc/revealjs/reveal.js/css/theme/theme/")
+}
+
